@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+
+        <!-- Nav -->
+            <nav id="nav">
+                <ul class="container">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contactame</a></li>
+                </ul>
+            </nav>
+
+
+    
+<!-- estilo -->
+<h3>
+    
+  </h3></small>
+<!-- Work -->
+            <article id="work" class="wrapper style2">
+                <div small class="text-body-secondary">
+                    <header>
+                        <img src="images/logo_ingenierias.jpg" alt="13" width="502px"><br><br>
+                        <h1>Reporte de practica 5.</h1>
+                        <h2>Isaac Antonio Peréz Alemán</h2>
+                        <h2>Attiny85 Outputs</h2>
+                        <h3>21/09/2024</h3></header>
+                    
+        <!-- Portfolio -->
+         <h6>Resumen</h6>
+         En esta práctica, se emplea el ATtiny85 para controlar varios periféricos simultáneamente: un zumbador, botones, LEDs individuales, un LED RGB, un servomotor, un motor DC y una tira de LEDs Neopixel. Para lograrlo, se implementan técnicas como PWM para ajustar el brillo de los LED y la posición del servomotor, así como la multiplexación de pines para optimizar el uso de las salidas limitadas del ATtiny85. Se evalúa el rendimiento del microcontrolador al gestionar las señales de cada dispositivo, logrando una interacción eficiente sin sobrecargar los pinos, demostrando así la versatilidad del ATtiny85 en aplicaciones de espacio r.
+        </p> 
+        <h6>Introducción</h6>
+       <p>El ATtiny85 es un microcontrolador compacto y de bajo costo ampliamente utilizado en proyectos de electrónica que requieren una funcionalidad básica pero eficiente. A pesar de contar con solo cinco pinos de entrada/salida, su versatilidad permite controlar una variedad de periféricos, tales como zumbadores, LEDs, servomotores, motores DC y tiras Neopixel, entre otros. Este tema explora las técnicas y estrategias necesarias para maximizar el uso  de los recursos limitados del ATtiny85, como la modulación por ancho de pulso (PWM) y la multiplexación de pines, demostrando cómo este microcontrolador puede ser una excelente opción para proyectos que requieren minimizar espacio. y consumo de energía
+       </p><br>
+    </p>
+            <article id="portfolio" class="wrapper style3"> 
+                <div class="container">
+                                    <h5>Materiales usados en esta practica:</h5>
+                                   
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+        Attiny85                                  <span class="badge text-bg-primary rounded-pill">1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                     Resistencias 
+                                  <span class="badge text-bg-primary rounded-pill">3</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Arduino UNO
+                                  <span class="badge text-bg-primary rounded-pill">1</span>
+                                </li>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            LEDs                                                
+                               <span class="badge text-bg-primary rounded-pill">3</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Jumpers
+                              <span class="badge text-bg-primary rounded-pill"></span>
+                            </li> 
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Motor DC
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> 
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Neopixel
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Botones
+                              <span class="badge text-bg-primary rounded-pill">2</span>
+                            </li> 
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Led RGB 
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> 
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tira de Neopixel
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Servo motor
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> 
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Buzzer
+                              <span class="badge text-bg-primary rounded-pill">1</span>
+                            </li> 
+                              </ul>
+            <br>     
+                                    <h3>Desarollo</h3>
+                                <h4></h4>
+                                <p>
+                                  <h3>1_Attiny LED - 2 Botones</h3>
+                                        <center><img src="images/attiny/OUTPUTS/out.jpg" alt="code1" width="520px"><video src="images/attiny/OUTPUTS/onOFF.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="225px"></video> </center>
+                                        <center><a href="codigos/AttinyOutputs/1_attiny_led_2_botones1.ino" download="blink1.ino">Descargar</a> <b>LED - 2 Botones</b></center>
+                                        <p>El código enciende el LED en el pin 2 al presionar el botón en el pin 3 y lo apaga al presionar el botón en el pin 4.</p>
+                                  
+                                       <h3>2_Attiny LED Blink - 2 Botones</h3>
+                                       <center><img src="images/attiny/OUTPUTS/out1.jpg" alt="code1" width="520px"><video src="images/attiny/OUTPUTS/BLIMBLINEO.mp4" autoplay="1" controls="" muted="" loop="" alt="" width=163px"></video>  </center>
+                                            <center><a href="codigos/AttinyOutputs/2_attiny_led_blink_2_botones1.ino" download="code2.ino">Descargar</a> <b>LED Blink - 2 Botones</b> </center>
+                                           <p></p>
+                                      
+                                           <h3>3_Attiny Buzzer - 2 Botones</h3>
+                                               <center><img src="images/attiny/code3low.jpg" alt="code1" width="520px"><video src="images/attiny/OUTPUTS/Buzzeronoff.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="223px"></video>  </center>
+                                               <center><a href="codigos/AttinyOutputs/3_attiny_buzzer_2_botones1.ino" download="code3.ino">Descargar</a> <b>Buzzer - 2 Botones</b></center>
+
+
+                                           <h3>4_Attiny LED RGB - 2 Botones</h3>
+                                           <center><img src="images/attiny/OUTPUTS/out3.jpg" alt="code1" width="520px"><video src="images/attiny/OUTPUTS/RGBred&blue.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="348px"></video>  </center>
+                                           <center><a href="codigos/AttinyOutputs/4_attiny_led_rgb_2_botones1.ino" download="code4.ino">Descargar</a> <b>LED RGB - 2 Botones</b></center>
+                                            <p>Este código utiliza el ATtiny85 para controlar tres LEDs de colores (rojo, azul y verde) conectados a los pines 2, 1 y 0 respectivamente, y permite cambiar los colores combinados de estos LEDs usando dos botones conectados a los pines 3 y 4.</p>
+
+                                          <h3>5_Attiny LED RGB contador - 2 Botones</h3>
+                                          <center><img src="images/attiny/OUTPUTS/out5.jpg" alt="code1" width="405px"><video src="images/attiny/OUTPUTS/rgbcontador.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="359px"></video>  </center>
+                                          <center><a href="codigos/AttinyOutputs/5_attiny_led_rgb_contador_2_botones1.ino" download="code5.ino">Descargar</a> <b>LED RGB contador - 2 Botones</b></center>
+                                        <p>Dos botones controlan un contador que varía entre 0 y 7, modificando la combinación de LEDs. Cada valor del contador enciende una combinación de colores: rojo, azul, verde, rosa, amarillo, cian o blanco. Un retardo de 500 ms evita lecturas rápidas de los botones.</p>
+
+                                         <h3>6_Attiny Motor DC- 2 Botones</h3>
+                                         <center><img src="images/attiny/OUTPUTS/out6.jpg" alt="code1" width="405px"><video src="images/attiny/OUTPUTS/MOTOR.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="200px"></video>  </center>
+                                         <center><a href="codigos/AttinyOutputs/6_attiny_motor_dc_2_botones1.ino" download="code6.ino">Descargar</a> <b>Motor DC- 2 Botones</b></center>
+                                        <p>Es un control simple de encendido y apagado de un LED usando dos botones.</p>
+
+                                        <h3>7_Attiny LED PWM</h3>
+                                        <center><img src="images/attiny/OUTPUTS/out7.jpg" alt="code1" width="634px"><video src="images/attiny/OUTPUTS/LEDD.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="190px"></video>  </center>
+                                        <center><a href="codigos/AttinyOutputs/7_attiny_led_pwm1.ino" download="code7.ino">Descargar </a> <b>LED PWM</b></center>
+                                        <p>Este código gradualmente aumenta y disminuye el brillo de un LED conectado al pin 0 utilizando PWM, creando un efecto de "fading" o desvanecimiento. </p>
+
+                                       <h3>8_Attiny LED PWM - 2 Botones</h3>
+                                       <center><img src="images/attiny/OUTPUTS/out7.jpg" alt="code1" width="715px"><video src="images/attiny/OUTPUTS/Led2botones.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="210px"></video>  </center>
+                                       <center><a href="codigos/AttinyOutputs/8_attiny_led_pwm_2_botones1.ino" download="code8.ino">Descargar</a> <b>LED PWM - 2 Botones</b></center>
+                                        <p>El código controla el brillo de un LED en el pin 0 usando PWM. Dos botones permiten aumentar o disminuir el brillo: el botón en el pin 3 lo incrementa y el botón en el pin 4 lo decrementa. El brillo se limita entre 0 (apagado) y 255 (máximo brillo) y se ajusta suavemente con `analogWrite`. Hay un retardo de 100 ms entre cada lectura y ajuste del brillo.</p>
+
+                                      <h3>9_Attiny Buzzer PWM</h3>
+                                      <center><img src="images/attiny/OUTPUTS/out8.jpg" alt="code1" width="574px"><video src="images/attiny/OUTPUTS/BUZZERPWM.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="290px"></video>  </center>
+                                      <center><a href="codigos/AttinyOutputs/9_attiny_buzzer_pwm1.ino" download="code9.ino">Descargar</a> <b>Buzzer PWM</b></center>
+                                        <p>Este código hace que un LED conectado al pin 0 se ilumine suavemente desde apagado hasta su máximo brillo y luego se apague gradualmente, creando un efecto de desvanecimiento.</p>
+
+                                     <h3>10_Attiny Buzzer PWM - 2 Botones</h3>
+                                     <center><img src="images/attiny/OUTPUTS/out9.jpg" alt="code1" width="475px"><video src="images/attiny/OUTPUTS/buzzer2buttons.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="250px"></video>  </center>
+                                     <center><a href="codigos/AttinyOutputs/10_attiny_buzzer_pwm_2_botones2.ino" download="code10.ino">Descargar</a><b> Buzzer PWM - 2 Botones</b></center>
+                                    <p>Este código permite controlar el brillo de un LED conectado al pin 0 mediante dos botones. Un botón aumenta el brillo y otro lo disminuye, con límites establecidos para asegurar que el brillo permanezca entre 0 y 255.</p>
+                                    <h3>11_Attiny Motor DC PWM- 2 Botones</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out10.jpg" alt="code1" width="470px"><video src="images/attiny/OUTPUTS/MOTOR2botones.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="252px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/11_attiny_motor_dc_pwm_2_botones1.ino" download="CODE11.ino">Descargar</a> <b> Motor DC PWM- 2 Botones</b></center>
+                                    <p>Este código permite controlar el brillo de un LED conectado al pin 0 usando dos botones: uno para aumentar el brillo y otro para disminuirlo. El brillo se ajusta suavemente y se limita entre 0 y 255.</p>
+                                    <h3>12_Attiny Servomotor</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out11.jpg" alt="code1" width="210px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="305px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/12_attiny_servomotor2.ino" download="code12.ino">Descargar</a> <b> Servomotor</b></center>
+                                    <p>Este diseño permite un control eficiente de servos sin requerir un hardware especializado, utilizando solo un microcontrolador y PWM.</p>
+                                    <h3>13_Attiny Servomotor - 2 Botones</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out12.jpg" alt="code1" width="186px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="300px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/13_attiny_servomotor_2_botones1.ino" download="code13.ino">Descargar</a> <b>Servomotor - 2 Botones</b></center>
+                                    <p>Este código completo controla un servo utilizando dos botones, con un ángulo ajustable entre 0 y 180 grados.</p>
+                                    <h3>14_Attiny Neopixel</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out13.jpg" alt="code1" width="186px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="300px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/14_attiny_neopixel_1.ino" download="code14.ino">Descargar</a> <b>Neopixel</b></center>
+                                    <p>El código controla un Neopixel conectado al pin 0, usando dos botones en los pines 3 y 4 para ajustar un contador (de 0 a 7). Según el valor del contador, el Neopixel cambia de color entre varios colores o se apaga. El color cambia cada 500 milisegundos.</p>
+
+                                    <h3>15_Attiny Neopixel - 2 Botones</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out13.jpg" alt="code1" width="186px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="300px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/15_attiny_neopixel_2_botones1.ino" download="code15.ino">Descargar</a> <b>contador + - 3 LEDs</b></center>
+                                    <p>El código controla un LED Neopixel conectado al pin 0 de un microcontrolador. Utiliza dos botones conectados a los pines 3 y 4 para aumentar o disminuir un contador, que está limitado entre 0 y 7. Dependiendo del valor del contador, el Neopixel cambia de color o se apaga</p>
+
+                                    <h3>16_Attiny Neopixel Tira x 5 - 2 Botones</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out14.jpg" alt="code1" width="186px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="300px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/16_attiny_neopixel_tira_x_5_2_botones1.ino" download="code16.ino">Descargar</a> <b> Neopixel Tira x 5 - 2 Botones contador</b></center>
+                                    <p>Este código controla una tira de 5 LEDs Neopixel conectada al pin 0 de un microcontrolador. En cada ciclo del loop, se van iluminando progresivamente los LEDs en rojo, comenzando desde el primero, y repitiendo el proceso con un retraso de 500 ms entre cada actualización.</p>
+
+
+                                    <h3>17_Attiny Neopixel Tira x 5 - 2 Botones</h3>
+                                    <center><img src="images/attiny/OUTPUTS/out15.jpg" alt="code1" width="186px"><video src="images/attiny/.mp4" autoplay="1" controls="" muted="" loop="" alt="" width="300px"></video>  </center>
+                                    <center><a href="codigos/AttinyOutputs/17_attiny_neopixel_tira_x_5_2_botones1.ino" download="code17.ino">Descargar</a> <b>Neopixel Tira x 5 - 2 Botones</b></center>
+                                     <p>Este código controla una tira de 5 LEDs Neopixel conectada al pin 0 de un microcontrolador. Utiliza dos botones conectados a los pines 3 y 4 para incrementar y decrementar un contador, que determina cuántos LEDs se iluminan en rojo. </p>
+<h6>Conclusiones</h6>
+El ATtiny85 es un microcontrolador versátil y, aunque tiene solo 5 pines de E/S, es capaz de manejar una variedad de componentes como zumbadores, LEDs, LEDs RGB, servomotores, motores DC y tiras de LEDs Neopixel. Sin embargo, el éxito de estas aplicaciones depende de una cuidadosa gestión de los recursos de pines y del uso de bibliotecas optimizadas para aprovechar al máximo su ca.
+<br>
+Para manejar varios dispositivos a la vez, es común que se empleen técnicas como el multiplexado, el uso de transistores para controlar cargas más altas y la optimización de código para controlar el tiempo y los recursos del microcontrolador. Esto permite al ATtiny85 realizar múltiples tareas, aunque tiene sus límites en cuanto a procesamiento simultáneo y consumo de memoria.
+<h6>Referencias</h6>
+<p>
+    <a href="https://www.arrow.com/es-mx/research-and-events/articles/attiny25-attiny45-attiny85-microcontroller-comparison" target="_blank">ATtiny25/45/85 comparación de microcontroladores</a>
+   <br>
+    <a href="https://www.tinkercad.com/dashboard/activities/kKxYmpPDJXs" target="_blank">Recurso de Attiny por tinkercad</a>
+<br>
+<a href="https://www.hwlibre.com/attiny85/" target="_blank">ATtiny85</a>
+</p>
+</article>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        <!-- Contact -->
+            <article id="contact" class="wrapper style4">
+                <div class="container medium">
+                    <header>
+                        <h2>Si quieres que haga algo por ti mandame un mensaje.</h2>
+                        <p></p>
+                    </header>
+                    <div class="row">
+                        <div class="col-12">
+                            <form method="post" action="#">
+                                <div class="row">
+                                    <div class="col-6 col-12-small">
+                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <input type="text" name="email" id="email" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Enviar mensaje" /></li>
+                                            <li><input type="reset" value="Limpiar el formulario" class="alt" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12">
+                            <hr />
+                            <h3>Encuentrame en (;...</h3>
+                            <ul class="social">
+                                <li><a href="https://x.com/IsaacAntonioPr2" class="icon brands fa-twitter"  target="_blank"><span class="label">Twitter</span></a></li>
+                                <li><a href="https://www.facebook.com/isaacantonio.perezaleman" class="icon brands fa-facebook-f"  target="_blank"><span class="label">Facebook</span></a></li>
+                                <li><a href="https://www.instagram.com/isaac.alemaan/" class="icon brands fa-instagram"  target="_blank"></span></a></li>
+                                <li><a href="https://soundcloud.com/isaac-perez-aleman" class="icon brands fa-soundcloud"  target="_blank"><span></span></a></li>
+                                <li><a href="https://www.youtube.com/@isaacantonioperezaleman2892" class="icon brands fa-youtube" target="_blank"><span></span></a></li>
+                            </ul>
+                            <hr />
+                        </div>
+                    </div>
+                    <footer>
+                        <ul id="copyright">
+                        </li><li>Design: Isaac Antonio Pérez Alemán</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </article>
+</body>
+</html>
